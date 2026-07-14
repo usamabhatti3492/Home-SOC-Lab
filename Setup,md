@@ -1,6 +1,6 @@
 ## Lab Environment
-  - VirtualBox 7.x
-  - Kali Linux 2026.1 (attacker)
-  - Windows 10 Evaluation (victim)
-  - Both VMs on VirtualBox Internal Network (intnet)
-  - Splunk Free ingesting Windows Security Event Logs
+   VirtualBox 7.x
+   Kali Linux 2026.1 (attacker)
+   Windows 10 Evaluation (victim)
+   Both VMs on VirtualBox Internal Network (intnet)
+   Splunk Free ingesting Windows Security Event Logs
