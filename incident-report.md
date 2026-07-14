@@ -21,7 +21,8 @@ index=main EventCode=4625 | stats count by src_ip
 **What it showed:** [Explain what the query returned and how it pointed you to the attack]
 
 ## Investigation
-[Walk through your reasoning step by step — what you looked at first, what you ruled out, how you confirmed it was a brute-force attempt and not something else. This section is where you demonstrate analyst thinking, not just tool output.]
+[Walk through your reasoning step by step — what you looked at first, what you ruled out, how you confirmed it was a brute-force attempt and not something else. This section is where you demonstrate analyst thinking, not just tool output.<img width="1899" height="1005" alt="image" src="https://github.com/user-attachments/assets/6f3a5ed9-bda2-46c6-a11c-372527c4042a" />
+]
 
 ## Impact Assessment
 [What was at risk if this were a real environment — e.g., "Successful brute force would have granted full RDP access to the host, exposing [whatever data/systems the victim VM represented]."]
