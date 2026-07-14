@@ -11,8 +11,12 @@
 
 ## Network Configuration
 - Both VMs connected via VirtualBox **Internal Network** (`intnet`)
+- Static IPs assigned: Kali `192.168.56.20`, Windows `192.168.56.10`
+- No default gateway — fully isolated from host network and internet
 - No internet access during attack simulation (isolated by design)
 - Verified connectivity via `ping` between hosts before running any tests
+<img width="1909" height="925" alt="image" src="https://github.com/user-attachments/assets/6f1b1a8b-7f9c-4880-ab08-a0156f0db4ad" />
+
 
 ## SIEM
 - Splunk Free, ingesting Windows Security Event Logs from the victim VM
