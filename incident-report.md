@@ -1,7 +1,7 @@
 # Incident Report: Brute-Force RDP Attack
 
 ## Summary
-[2 sentences, plain language — what happened, what you found]
+A simulated brute-force attack was launched against RDP on an isolated Windows victim host, using Hydra from a Kali Linux attacker machine. Splunk log analysis identified the attack within [X] seconds of initiation, isolating the source IP and confirming [the login attempt was blocked after repeated failures / the attack succeeded due to the absence of an account lockout policy].
 
 ## Timeline
 | Time | Event |
