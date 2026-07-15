@@ -21,8 +21,17 @@
 
 ## SIEM
 - Splunk Free, ingesting Windows Security Event Logs from the victim VM
-<img width="624" height="453" alt="image" src="https://github.com/user-attachments/assets/6c17c938-8b4c-4616-afe5-782d83fc19c1" />
+<img width="700" height="465" alt="image" src="https://github.com/user-attachments/assets/6c17c938-8b4c-4616-afe5-782d83fc19c1" />
 
+## Splunk Configuration
+- Local Event Log Collection configured to ingest Windows Security event log
+- Destination index: main
+<img width="700" height="465" alt="image" src="https://github.com/user-attachments/assets/759db502-8f9a-46f5-b57a-8d7e9bd29ca7" />
+
+- Verified data ingestion (1,333 events indexed from Windows Security log):
+
+  
+<img width="700" height="465" alt="image" src="https://github.com/user-attachments/assets/d0cd1d0b-fafa-465f-857a-254ee1a576b5" />
 
 ## Tools Used for Simulation
 - Hydra (brute-force attack tool, run from Kali)
