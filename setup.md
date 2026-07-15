@@ -1,4 +1,4 @@
-<img width="1910" height="995" alt="image" src="https://github.com/user-attachments/assets/278cd49b-f5b1-4496-b297-c49b6b32b390" /># Lab Environment
+# Lab Environment
 
 ## Virtualization
 - VirtualBox 7.x
@@ -15,7 +15,7 @@
 - No default gateway — fully isolated from host network and internet
 - No internet access during attack simulation (isolated by design)
 - Verified connectivity via `ping` between hosts before running any tests
-<img width="1910" height="995" alt="image" src="https://github.com/user-attachments/assets/bf602976-6cb8-48fe-89c5-74a6d8f8ac64" />
+<img width="1910" height="995" alt="image" src="https://github.com/user-attachments/assets/278cd49b-f5b1-4496-b297-c49b6b32b390" />
 
 
 
