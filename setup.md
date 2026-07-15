@@ -15,12 +15,14 @@
 - No default gateway — fully isolated from host network and internet
 - No internet access during attack simulation (isolated by design)
 - Verified connectivity via `ping` between hosts before running any tests
-<img width="1910" height="995" alt="image" src="https://github.com/user-attachments/assets/278cd49b-f5b1-4496-b297-c49b6b32b390" />
+<img width="1110" height="595" alt="image" src="https://github.com/user-attachments/assets/278cd49b-f5b1-4496-b297-c49b6b32b390" />
 
 
 
 ## SIEM
 - Splunk Free, ingesting Windows Security Event Logs from the victim VM
+<img width="624" height="453" alt="image" src="https://github.com/user-attachments/assets/6c17c938-8b4c-4616-afe5-782d83fc19c1" />
+
 
 ## Tools Used for Simulation
 - Hydra (brute-force attack tool, run from Kali)
