@@ -37,5 +37,6 @@
 - Hydra (brute-force attack tool, run from Kali)
 
 ## Notes
-- Snapshots taken before each major test to allow quick rollback
-- [Add any other config detail worth noting — e.g., specific Windows audit policy settings enabled to generate Event ID 4625 logs]
+- Static IPs reset when switching adapter mode between NAT and Internal Network (needed for Splunk download); reapplied manually after each switch using `sudo ip addr add 192.168.56.10/24 dev eth0` on Kali and via Network Connections settings on Windows
+- Splunk index field defaulted to "default" explicitly set to "main" to match search queries used later
+- Windows Firewall and adapter network-name mismatches were checked as part of troubleshooting a temporary "100% packet loss" connectivity issue, resolved by confirming both VMs were on the same Internal Network name
