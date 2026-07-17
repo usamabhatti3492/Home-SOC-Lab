@@ -96,6 +96,6 @@ passwords without any automatic defensive response from the system itself.
 - **Multi-factor authentication (MFA):** Require a second factor for RDP 
   access, so a correctly guessed password alone is insufficient to gain access.
 - **Splunk alert rule:** Configure an alert to trigger when more than 10 
-  EventCode=4625 events occur from a single source IP within 5 minutes — this 
+  EventCode=4625 events occur from a single source IP within 5 minutes, this 
   would have flagged this attack in real time rather than requiring manual 
   log review after the fact.
