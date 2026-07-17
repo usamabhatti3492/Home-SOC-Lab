@@ -20,7 +20,7 @@ defense. Detected and confirmed via Splunk log analysis (Event ID 4625),
 tracing all failed attempts to the attacker's source IP and target account.
 
 ## Screenshots
-![Splunk search results](screenshots/splunk-search.png)
+<img width="577" height="709" alt="Hydra brute-force attack execution against RDP" src="https://github.com/user-attachments/assets/c5b1bb85-9687-411e-9061-417e98c7b422" />
 *262 password attempts executed against the Windows victim VM via RDP*
 
 ![Attack detection](screenshots/detection.png)
