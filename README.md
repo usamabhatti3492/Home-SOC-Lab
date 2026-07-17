@@ -12,21 +12,37 @@ Splunk Free · VirtualBox · Kali Linux · Windows 10 · Hydra
 - Writing an incident report a real SOC team would recognize
 
 ## Key Finding
-[2-3 sentences — the short version of what you found. Example: "Simulated a brute-force RDP attack from an external-facing Kali VM. Identified 40+ failed login attempts within 90 seconds via Splunk log analysis, isolated the source IP, and documented the incident with a recommended mitigation (account lockout policy)."]
+
+Simulated a brute-force RDP attack using Hydra with a 262-password wordlist 
+against a Windows victim VM. No valid password was found, but the attack ran 
+completely unopposed — no account lockout, no rate limiting, no automatic 
+defense. Detected and confirmed via Splunk log analysis (Event ID 4625), 
+tracing all failed attempts to the attacker's source IP and target account.
 
 ## Screenshots
 ![Splunk search results](screenshots/splunk-search.png)
-*One-line caption explaining what this shows*
+*262 password attempts executed against the Windows victim VM via RDP*
 
 ![Attack detection](screenshots/detection.png)
-*One-line caption*
+*Splunk identifying the attack via Event ID 4625, sourced from the Kali attacker VM*
 
 ## Full Documentation
 - 📋 [Full Incident Report](incident-report.md) — detailed timeline, investigation, and recommendations
 - ⚙️ [Lab Setup](setup.md) — environment, tools, and configuration
 
 ## What I Learned
-[2-3 honest sentences about the actual skill gained]
+
+Built and debugged a fully isolated lab network from scratch, including 
+diagnosing multi-layer connectivity issues — static IP resets, firewall scope 
+restrictions, and VirtualBox promiscuous mode settings — that had nothing to 
+do with the attack itself but everything to do with real infrastructure 
+troubleshooting. Also learned that offensive tools like Hydra have real 
+limitations against modern protocols; both RDP and initial SMB attempts 
+failed due to tooling issues rather than attacker error, which required 
+pivoting strategy mid-investigation rather than assuming the target was secure.
 
 ## Next Steps
-[Optional — what you're building next, e.g., "Adding a second scenario simulating malware execution."]
+
+Planning to add a second scenario simulating a different attack vector 
+(e.g., malware execution and process-based detection) to demonstrate 
+detection beyond authentication logs.
