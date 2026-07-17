@@ -1,6 +1,6 @@
 # Home SOC Lab — Detecting a Brute-Force RDP Attack
 
-A small home lab simulating a real security incident end-to-end: attack, detection, investigation, and reporting — mirroring the workflow of a SOC analyst.
+A small home lab simulating a real security incident end-to-end: attack, detection, investigation, and reporting, mirroring the workflow of a SOC analyst.
 
 ## Tools Used
 Splunk Free · VirtualBox · Kali Linux · Windows 10 · Hydra
@@ -15,7 +15,7 @@ Splunk Free · VirtualBox · Kali Linux · Windows 10 · Hydra
 
 Simulated a brute-force RDP attack using Hydra with a 262-password wordlist 
 against a Windows victim VM. No valid password was found, but the attack ran 
-completely unopposed — no account lockout, no rate limiting, no automatic 
+completely unopposed, no account lockout, no rate limiting, no automatic 
 defense. Detected and confirmed via Splunk log analysis (Event ID 4625), 
 tracing all failed attempts to the attacker's source IP and target account.
 
@@ -42,8 +42,8 @@ tracing all failed attempts to the attacker's source IP and target account.
 ## What I Learned
 
 Built and debugged a fully isolated lab network from scratch, including 
-diagnosing multi-layer connectivity issues — static IP resets, firewall scope 
-restrictions, and VirtualBox promiscuous mode settings — that had nothing to 
+diagnosing multi-layer connectivity issues, static IP resets, firewall scope 
+restrictions, and VirtualBox promiscuous mode settings, that had nothing to 
 do with the attack itself but everything to do with real infrastructure 
 troubleshooting. Also learned that offensive tools like Hydra have real 
 limitations against modern protocols; both RDP and initial SMB attempts 
