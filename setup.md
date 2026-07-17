@@ -15,7 +15,8 @@
 - No default gateway — fully isolated from host network and internet
 - No internet access during attack simulation (isolated by design)
 - Verified connectivity via `ping` between hosts before running any tests
-<img width="1916" height="1012" alt="Ping test confirming isolated connectivity between Kali and Windows VMs on the internal network" src="https://github.com/user-attachments/assets/bf412698-4daf-40e8-a6d3-ff19608efa34" />
+
+<img width="1791" height="921" alt="Ping test confirming isolated connectivity between Kali and Windows VMs on the internal network" src="https://github.com/user-attachments/assets/66605470-bdf8-4887-adc7-d43c9be1ce56" />
 
 
 
