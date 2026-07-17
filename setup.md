@@ -11,27 +11,32 @@
 
 ## Network Configuration
 - Both VMs connected via VirtualBox **Internal Network** (`intnet`)
-- Static IPs assigned: Kali `192.168.56.20`, Windows `192.168.56.10`
+- Static IPs assigned: Kali `192.168.56.10`, Windows `192.168.56.10`
 - No default gateway — fully isolated from host network and internet
 - No internet access during attack simulation (isolated by design)
 - Verified connectivity via `ping` between hosts before running any tests
-<img width="1110" height="595" alt="image" src="https://github.com/user-attachments/assets/278cd49b-f5b1-4496-b297-c49b6b32b390" />
+<img width="1916" height="1012" alt="image" src="https://github.com/user-attachments/assets/bf412698-4daf-40e8-a6d3-ff19608efa34" />
+
+
 
 
 
 ## SIEM
 - Splunk Free, ingesting Windows Security Event Logs from the victim VM
-<img width="700" height="465" alt="image" src="https://github.com/user-attachments/assets/6c17c938-8b4c-4616-afe5-782d83fc19c1" />
+<img width="700" height="465" alt="image" src="https://github.com/user-attachments/assets/ee450c82-fc9e-4368-8821-f49343ba1e3a" />
+
 
 ## Splunk Configuration
 - Local Event Log Collection configured to ingest Windows Security event log
 - Destination index: main
-<img width="700" height="465" alt="image" src="https://github.com/user-attachments/assets/759db502-8f9a-46f5-b57a-8d7e9bd29ca7" />
+<img width="700" height="465" alt="image" src="https://github.com/user-attachments/assets/5c5f4eb0-80b9-4eb5-92c9-7f1fc7cf3537" />
 
-- Verified data ingestion (1,333 events indexed from Windows Security log):
+
+- Verified data ingestion (1,092 events indexed from Windows Security log):
 
   
-<img width="700" height="465" alt="image" src="https://github.com/user-attachments/assets/d0cd1d0b-fafa-465f-857a-254ee1a576b5" />
+<img width="700" height="465" alt="image" src="https://github.com/user-attachments/assets/47a3806b-1cea-4710-bb5c-0876a03a1090" />
+
 
 ## Tools Used for Simulation
 - Hydra (brute-force attack tool, run from Kali)
