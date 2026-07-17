@@ -11,7 +11,7 @@
 
 ## Network Configuration
 - Both VMs connected via VirtualBox **Internal Network** (`intnet`)
-- Static IPs assigned: Kali `192.168.56.10`, Windows `192.168.56.10`
+- Static IPs assigned: Kali `192.168.56.20`, Windows `192.168.56.10`
 - No default gateway — fully isolated from host network and internet
 - No internet access during attack simulation (isolated by design)
 - Verified connectivity via `ping` between hosts before running any tests
