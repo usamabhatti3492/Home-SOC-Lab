@@ -73,7 +73,7 @@ rather than an actual valid credential.
 
 ## Impact Assessment
 
-No account compromise occurred in this test — the attack failed to guess a 
+No account compromise occurred in this test, the attack failed to guess a 
 valid password within the fasttrack.txt wordlist (262 attempts). However, this 
 outcome depended entirely on the password not appearing in that specific list. 
 Had the account used a weaker or more common password, or had the attack run 
