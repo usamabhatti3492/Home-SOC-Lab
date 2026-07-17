@@ -18,7 +18,10 @@ source IP and timestamp of the attack.
 Brute-force attack executed from Kali against Windows RDP (port 3389) using Hydra 
 with the fasttrack.txt wordlist (262 password attempts).
 
-**Command used:** hydra -l usama -P /usr/share/wordlists/fasttrack.txt rdp://192.168.56.10
+**Command used:**
+```
+hydra -l usama -P /usr/share/wordlists/fasttrack.txt rdp://192.168.56.10
+```
 
 **Result:** 262 attempts tried over ~2.5 minutes, 0 valid passwords found. Hydra 
 experienced repeated intermittent connection failures during the run, consistent 
