@@ -63,7 +63,7 @@ brute-force attack:
   password"), consistent with a wordlist-based guessing attack rather than a 
   single mistyped login
 
-One additional data point worth noting: during the attack, Hydra's own output 
+**One additional data point worth noting:** during the attack, Hydra's own output 
 flagged one attempt (password "Spring2017") as a possible valid credential 
 with the account "not active for remote desktop." This was manually verified 
 by attempting to log in with that password directly, the login failed, 
