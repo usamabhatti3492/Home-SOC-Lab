@@ -20,11 +20,19 @@ defense. Detected and confirmed via Splunk log analysis (Event ID 4625),
 tracing all failed attempts to the attacker's source IP and target account.
 
 ## Screenshots
+
 <img width="577" height="709" alt="Hydra brute-force attack execution against RDP" src="https://github.com/user-attachments/assets/c5b1bb85-9687-411e-9061-417e98c7b422" />
+
+
+
 *262 password attempts executed against the Windows victim VM via RDP*
 
-<img width="821" height="569" alt="Splunk event log showing failed logon from attack source" src="https://github.com/user-attachments/assets/dff633c9-1746-4a7b-b1cc-0dc63d6e7f98" />
-<img width="823" height="570" alt="Failure details confirming source IP and NTLM authentication" src="https://github.com/user-attachments/assets/0ac16a9a-55c4-4b7b-8c38-14d76cab9fe7" />
+<img width="721" height="569" alt="Splunk event log showing failed logon from attack source" src="https://github.com/user-attachments/assets/dff633c9-1746-4a7b-b1cc-0dc63d6e7f98" />
+<img width="723" height="570" alt="Failure details confirming source IP and NTLM authentication" src="https://github.com/user-attachments/assets/0ac16a9a-55c4-4b7b-8c38-14d76cab9fe7" />
+
+
+
+
 *Splunk identifying the attack via Event ID 4625, sourced from the Kali attacker VM*
 
 ## Full Documentation
