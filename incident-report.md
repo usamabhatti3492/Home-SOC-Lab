@@ -66,7 +66,7 @@ brute-force attack:
 One additional data point worth noting: during the attack, Hydra's own output 
 flagged one attempt (password "Spring2017") as a possible valid credential 
 with the account "not active for remote desktop." This was manually verified 
-by attempting to log in with that password directly - the login failed, 
+by attempting to log in with that password directly, the login failed, 
 confirming this was a false positive from Hydra's experimental RDP module 
 rather than an actual valid credential.
 
@@ -79,7 +79,7 @@ outcome depended entirely on the password not appearing in that specific list.
 Had the account used a weaker or more common password, or had the attack run 
 with a larger wordlist (e.g., rockyou.txt), the outcome could have been 
 different. In a real environment, a successful brute-force against RDP would 
-grant full remote desktop access to the host — equivalent to physical access 
+grant full remote desktop access to the host, equivalent to physical access 
 to the machine, including any files, credentials, or lateral network access 
 available from that session.
 ## Root Cause
