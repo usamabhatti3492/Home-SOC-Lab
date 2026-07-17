@@ -7,7 +7,7 @@
 | VM | Role | OS |
 |----|------|-----|
 | Kali Linux 2026.1 | Attacker | Debian-based |
-| Windows 11 Evaluation | Victim | Windows 11 |
+| Windows 10 Evaluation | Victim | Windows 10 Pro |
 
 ## Network Configuration
 - Both VMs connected via VirtualBox **Internal Network** (`intnet`)
