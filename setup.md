@@ -15,7 +15,7 @@
 - No default gateway — fully isolated from host network and internet
 - No internet access during attack simulation (isolated by design)
 - Verified connectivity via `ping` between hosts before running any tests
-<img width="1916" height="1012" alt="image" src="https://github.com/user-attachments/assets/bf412698-4daf-40e8-a6d3-ff19608efa34" />
+<img width="1916" height="1012" alt="Ping test confirming isolated connectivity between Kali and Windows VMs on the internal network" src="https://github.com/user-attachments/assets/bf412698-4daf-40e8-a6d3-ff19608efa34" />
 
 
 
@@ -23,19 +23,19 @@
 
 ## SIEM
 - Splunk Free, ingesting Windows Security Event Logs from the victim VM
-<img width="700" height="465" alt="image" src="https://github.com/user-attachments/assets/ee450c82-fc9e-4368-8821-f49343ba1e3a" />
+<img width="700" height="465" alt="Splunk Enterprise installed and running on the Windows victim VM" src="https://github.com/user-attachments/assets/ee450c82-fc9e-4368-8821-f49343ba1e3a" />
 
 
 ## Splunk Configuration
 - Local Event Log Collection configured to ingest Windows Security event log
 - Destination index: main
-<img width="700" height="465" alt="image" src="https://github.com/user-attachments/assets/5c5f4eb0-80b9-4eb5-92c9-7f1fc7cf3537" />
+<img width="700" height="465" alt="Splunk Local Event Log Collection configured to ingest the Windows Security event log into index main" src="https://github.com/user-attachments/assets/5c5f4eb0-80b9-4eb5-92c9-7f1fc7cf3537" />
 
 
 - Verified data ingestion (1,092 events indexed from Windows Security log):
 
   
-<img width="700" height="465" alt="image" src="https://github.com/user-attachments/assets/47a3806b-1cea-4710-bb5c-0876a03a1090" />
+<img width="700" height="465" alt="Splunk search results confirming 1,092 Windows Security events successfully indexed" src="https://github.com/user-attachments/assets/47a3806b-1cea-4710-bb5c-0876a03a1090" />
 
 
 ## Tools Used for Simulation
