@@ -11,7 +11,7 @@ source IP and timestamp of the attack.
 |------|-------|
 | 15:30:22 | Hydra attack initiated against RDP (port 3389)  |
 | 15:30 - 15:32 | 262 password attempts made, intermittent connection failures observed |
-| 15:32:44 | Attack completed — 0 valid passwords found |
+| 15:32:44 | Attack completed - 0 valid passwords found |
 
 ## Attack Execution
 
@@ -24,7 +24,7 @@ with the fasttrack.txt wordlist (262 password attempts).
 experienced repeated intermittent connection failures during the run, consistent 
 with known limitations in its experimental RDP module.
 
-<img width="577" height="709" alt="image" src="https://github.com/user-attachments/assets/c5b1bb85-9687-411e-9061-417e98c7b422" />
+<img width="577" height="709" alt="Hydra brute-force attack execution against RDP" src="https://github.com/user-attachments/assets/c5b1bb85-9687-411e-9061-417e98c7b422" />
 
 
 ## Detection Method
@@ -37,12 +37,12 @@ index=main EventCode=4625 Source_Network_Address=192.168.56.20
 
 **What it showed:** Failed login events recorded at 07/17/2026 9:32:43 PM, 
 originating from source IP 192.168.56.20 (Kali attacker VM), targeting account 
-"usama" via network logon (Logon Type 3, NTLM authentication) — consistent with 
+"usama" via network logon (Logon Type 3, NTLM authentication) - consistent with 
 the Hydra RDP brute-force attack. Failure reason: "Unknown user name or bad 
 password" (Status 0xC000006D).
 
-<img width="821" height="569" alt="image" src="https://github.com/user-attachments/assets/dff633c9-1746-4a7b-b1cc-0dc63d6e7f98" />
-<img width="823" height="570" alt="image" src="https://github.com/user-attachments/assets/0ac16a9a-55c4-4b7b-8c38-14d76cab9fe7" />
+<img width="821" height="569" alt="Splunk event log showing failed logon from attack source" src="https://github.com/user-attachments/assets/dff633c9-1746-4a7b-b1cc-0dc63d6e7f98" />
+<img width="823" height="570" alt="Failure details confirming source IP and NTLM authentication" src="https://github.com/user-attachments/assets/0ac16a9a-55c4-4b7b-8c38-14d76cab9fe7" />
 
 ## Investigation
 
@@ -63,7 +63,7 @@ brute-force attack:
 One additional data point worth noting: during the attack, Hydra's own output 
 flagged one attempt (password "Spring2017") as a possible valid credential 
 with the account "not active for remote desktop." This was manually verified 
-by attempting to log in with that password directly — the login failed, 
+by attempting to log in with that password directly - the login failed, 
 confirming this was a false positive from Hydra's experimental RDP module 
 rather than an actual valid credential.
 
@@ -96,7 +96,3 @@ passwords without any automatic defensive response from the system itself.
   EventCode=4625 events occur from a single source IP within 5 minutes — this 
   would have flagged this attack in real time rather than requiring manual 
   log review after the fact.
-
-## Evidence
-![Full attack log](screenshots/attack-log.png)
-![Splunk query results](screenshots/splunk-query.png)
